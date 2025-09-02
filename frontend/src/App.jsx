@@ -22,7 +22,7 @@ function App() {
           <Route path="blog-titles" element={<Blog />} />
           <Route path="generate-images" element={<ImageGenerate />} />
           <Route path="remove-background" element={<BackGroundRemover />} />
-          <Route path="remove-object" element={<ObjectRemover />} />
+          <Route path="remove-objects" element={<ObjectRemover />} />
           <Route path="review-resume" element={<ResumeReview />} />
           <Route path="community" element={<Community />} />
         </Route>
