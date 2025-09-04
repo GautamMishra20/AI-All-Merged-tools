@@ -10,17 +10,14 @@ import BackGroundRemover from "./pages/BackGroundRemover";
 import ObjectRemover from "./pages/ObjectRemover";
 import ResumeReview from "./pages/ResumeReview";
 import Community from "./pages/Community";
-import { useAuth } from "@clerk/clerk-react";
-import { useEffect } from "react";
+// import { useAuth } from "@clerk/clerk-react";
+// import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
-  const { getToken } = useAuth();
-  useEffect(() => {
-    getToken().then((token) => console.log(token));
-  }, []);
-
   return (
     <div>
+      <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ai" element={<Layout />}>
